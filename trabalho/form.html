@@ -7,11 +7,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <title> Trabalho HTML/CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-
+    <aside class="sidebar">
+        <h1>LPW<span id="blk">_</span></h1>
+        <nav>
+            <ul>
+                <li><a href="list.html">Lista</a></li>
+                <li><a href="table.html">Tabela</a></li>
+                <li><a href="form.html">Formulário</a></li>
+              </ul>
+        </nav>
+        
+    </aside>
+    <div class="content">
+        <h2>linguagem de Programação Web</h2>
+        <div class="form">
+            <form  action="/submit_form">
+                <label for="fname">Nome:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="text_bio">Bio:</label><br>
+                <textarea id="text_bio" name="bio" >
+                </textarea><br>
+                <input type="checkbox" id="check_ok" name="vehicle1" value="check">
+                <label for="check_ok"> Confirmo que esta informação está correta</label><br>
+                <label for="drop_cidade">Escolha uma cidade:</label>
+                <select id="drop_cidade" name="cars">
+                  <option value="pel">Pelotas</option>
+                  <option value="rg">Rio Grande</option>
+                  <option value="cl">Capão do Leáo</option>
+                </select><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Masculino</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Feminino</label><br>
+                <input type="submit" value="Enviar">
+              </form> 
+    
+        </div>
+    </div>
 </body>
 </html>
