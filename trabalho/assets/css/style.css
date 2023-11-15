@@ -15,7 +15,14 @@ h1 {
     font-family:  logoFont;
     text-align: center;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 5em;
+}
+
+h2 {
+    font-family:  logoFont;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
 }
 
 ul {
@@ -74,6 +81,7 @@ li a:hover:not(.active) {
         width: 100%;
         max-height: 25%;
         left: 0;
+        position: relative;
     }  
     body {
         width: 600px;
