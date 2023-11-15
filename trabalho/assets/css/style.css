@@ -1,0 +1,82 @@
+@font-face {
+    font-family: logoFont;
+    src: url(../fonts/MajorMonoDisplay-Regular.ttf);
+  }
+
+body {
+    font-family: Lucida Console, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+h1 {
+    font-family:  logoFont;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: auto;
+  }
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+.sidebar {
+    background-color: #f0f0f0;
+    width: 20%;
+    padding: 15px;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    
+    margin-left: 25%;
+    padding: 15px;
+    flex: 1;
+}
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+        margin-top: 25%;
+    }
+    ul {
+        width: 100%;
+        max-height: 25%;
+        left: 0;
+    }  
+    body {
+        width: 600px;
+    }
+
+}
