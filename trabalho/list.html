@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<meta http-equiv="Content-Type" content="text/html">
 <meta charset="utf-8">
 <meta name="description" content="Trabalho de html e css da cadeira de linguagem de programação web">
 <meta name="keywords" content="HTML, CSSt">
@@ -7,11 +8,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <title> Trabalho HTML/CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-
+    <aside class="sidebar">
+        <h1>LPW<span id="blk">_</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="list.html">Lista</a></li>
+                <li><a href="table.html">Tabela</a></li>
+                <li><a href="form.html">Formulário</a></li>
+              </ul>
+        </nav>
+        
+    </aside>
+    <div class="content">
+        <h2>linguagem de Programação Web</h2>
+        <section class="lista">
+        <h3>Sumário:</h3>
+        <ol>
+            <li>Introdução</li>
+            <li>O layout e design</li>
+            <li>Sidebar/cabeçalho</li>
+            <li>Menu</li>
+            <li>Tabela</li>
+            <li>Lista</li>
+            <li>Footer</li>
+          </ol> 
+          </section>
+    </div>
 </body>
 </html>

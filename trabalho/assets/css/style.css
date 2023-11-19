@@ -10,6 +10,28 @@
     100%  {color: #000;}
 }
 
+#blk {
+    animation-name: blink;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+  }
+
+table{
+    margin-left: 20%;
+}
+tfoot {
+    background-color: #c0c0c0
+}
+
+th {
+    background-color: #c0c0c0;
+    padding: 20px;
+} 
+
+tr, td {
+    border:#000 solid 1px;
+}
+
 body {
     font-family: Lucida Console, monospace;
     margin: 0;
@@ -31,7 +53,30 @@ h2 {
     font-weight: bolder;
     font-size: 2em;
 }
+section {
+    margin-left: 20%;
+    margin-right: 20%;
+    border:#000 solid 1px;
+    padding: 20px;
+    background-color: #c0c0c0;
+}
+/* Estilização para a lista */
+.lista ol, li, a, h3{
+    font-weight: bolder;
+    
+}
+.lista li {
+    color: black;
+}
+.lista li:nth-child(odd) {
+    
+    background-color: #8f8c8c;
+}
+.lista li:nth-child(even) {
+    background-color: #d4d1d1;
+}
 
+/* Estilização para a menu */
 ul {
     list-style-type:none;
     margin: 0;
@@ -58,6 +103,7 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
   }
+
 .sidebar {
     background-color: #f0f0f0;
     width: 20%;
@@ -70,15 +116,29 @@ li a:hover:not(.active) {
 }
 .content {
     
-    margin-left: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 15px;
     flex: 1;
 }
-#blk {
-    animation-name: blink;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite;
-  }
+article {
+    margin:10%;
+}
+/* estilização para footer  */
+footer {
+    margin-top: 20px;
+    padding-top: 25px;
+    padding-left: 20%;
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* estilização formulario */
 .form {
     background-color: #f0f0f0;
     border: 2px solid #555;
@@ -87,17 +147,34 @@ li a:hover:not(.active) {
     margin: 5% 20% 10% 20%;
     min-width: 320px;
 }
+textarea {
+    resize: none;
+}
+.button {
+    margin: 20px;
+}
 
+/* Mudanças para ajustar a renderização conforme o tamanho minimo de tela */
 
-@media (max-width: 600px) {
+@media (max-width:1100px) {
+    h1 {
+        font-size: 4em;
+    }
+    
+}
+
+@media (max-width: 900px) {
     .sidebar {
         width: 100%;
+
         height: auto;
-        position: relative;
+        position: absolute;
+        
     }
     .content {
         margin-left: 0;
-        margin-top: 25%;
+        margin-top: 40%;
+        width: 100%;
     }
     ul {
         width: 100%;
@@ -106,7 +183,16 @@ li a:hover:not(.active) {
         position: relative;
     }  
     body {
-        width: 600px;
+        
     }
+    
+    table{
+        margin-left: 0;
+        margin-right:1%;
+        width: 98%;
+    }
+    footer {
+        padding-left: 5%;
 
+    }
 }

@@ -14,9 +14,10 @@
         <h1>LPW<span id="blk">_</span></h1>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="list.html">Lista</a></li>
                 <li><a href="table.html">Tabela</a></li>
-                <li><a href="form.html">Formulário</a></li>
+                <li><a class="active" href="form.html">Formulário</a></li>
               </ul>
         </nav>
         
@@ -27,10 +28,10 @@
             <form  action="/submit_form">
                 <label for="fname">Nome:</label><br>
                 <input type="text" id="fname" name="fname"><br>
-                <label for="text_bio">Bio:</label><br>
-                <textarea id="text_bio" name="bio" >
+                <label for="text_coment">Comentário:</label><br>
+                <textarea id="text_coment" name="comentario" >
                 </textarea><br>
-                <input type="checkbox" id="check_ok" name="vehicle1" value="check">
+                <input type="checkbox" id="check_ok" name="check" value="check">
                 <label for="check_ok"> Confirmo que esta informação está correta</label><br>
                 <label for="drop_cidade">Escolha uma cidade:</label>
                 <select id="drop_cidade" name="cars">
@@ -42,7 +43,7 @@
                 <label for="male">Masculino</label><br>
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Feminino</label><br>
-                <input type="submit" value="Enviar">
+                <input class="button" type="submit" value="Enviar">
               </form> 
     
         </div>

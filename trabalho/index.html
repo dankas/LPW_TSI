@@ -15,6 +15,7 @@
         <h1>LPW<span id="blk">_</span></h1>
         <nav>
             <ul>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="list.html">Lista</a></li>
                 <li><a href="table.html">Tabela</a></li>
                 <li><a href="form.html">Formulário</a></li>
@@ -23,8 +24,54 @@
         
     </aside>
     <div class="content">
-        <h2>linguagem de Programação Web</h2>
-        <p>Este é um exemplo de conteúdo responsivo com uma barra lateral.</p>
+            <h2>linguagem de Programação Web</h2>
+                <article>
+                    <h3>Introdução</h3>
+                    O assunto escolhido para minha página é o próprio trabalho, escolhi detalhar aqui as decisões de explicar cada parte do trabalho de HTML + CSS.   Nesta pagina inicial eu eu falo sobre o trabalho, na pagina de listas ordenados é montei um sumário que redireciona para está pagina,  na pagina da tabela eu disponibilizo uma tabela dos arquivos no diretório e na do formulário um formulario de contato.  
+        
+                    <h3>O layout e design.</h3>
+                    <p>
+                        Escolhi modificar alguns detalhes do layout, assim sendo inicialmente eu mudei o cabeçalho para um sidebar, ele possui a mesma função do cabeçalho só que posicionado a esquerda.   Entretanto, ao redimencionar a tela para menos de 900 pixels o layout muda para uma página com o formato de cabeçalho, corpo e footer. Usei o display flex no sentido de coluna.
+                        As cores usadas na pagina foram as seguintes:
+                        -Fundo da sidebar e do formulário #f0f0f0.
+                        -Fundo da página #fff (branco).
+                        -Cor de texto #000 (preto).
+                    </p>
+        
+                    <h3>Sidebar/cabeçalho.</h3>
+                        O sidebar/cabeçalho possui o logo da pagina e o menu da pagina. usei a tag asid do html5 para a seção.
+                    <h3>Logo</h3>
+                    <p>
+                        O logo foi criado com a ideia de ser a segla da cadeira escrita em um terminal, tendo um underscore piscando.   A fonte do logo foi escolhida no google fonts e tem o nome de Major Mono Display (https://fonts.google.com/specimen/Major+Mono+Display) e foi colocada na pasta fonts.   O efeito de piscar do underscore foi feito com a propriedade transform do CSS, onde eu animo a mudança de opacidademporum periodo de 0.8 segundo no local marcado pelo ID blk.
+
+                    </p>
+                    
+                    <h3>menu</h3>
+                    <p>
+                        O menu é formado por uma lista encapsulada pela tag nav do html5.   Cada link tem o background na cor de fundo da sidebar e o "hover" na cor  #555 e a opção ativa no tom de verde #04AA6D.
+
+                    </p>
+                    <h3>Tabela</h3>
+                    <p>
+                        Fiz uma tabela com os arquivos do trabalho e seus respectivos tamanhos em kb, mesclando a tabela final em uma linha de soma do tamanho dos arquivos.
+
+                    </p>
+                    <h3>Lista</h3>
+                    <p>
+                        A lista funcionará como sumario, usei a estilização de par impar conforme pedido no trabalho e ele redireciona para a pagina principal "linkando as seçoes".
+
+                    </p>
+                    <h3>Footer</h3>
+                    <p>
+                        o footer mostra os links de contato do trabalho.
+
+                    </p>
+        
+                </article>
+
     </div>
+    <footer>
+        <p>Daniel Moraes - <a href="mailto://danielmoraes.pl013@academico.ifsul.edu.br">danielmoraes.pl013@academico.ifsul.edu.br</a> - <a href="https://github.com/dankas/LPW_TSI" target="_blank">https://github.com/dankas/LPW_TSI</a></p>
+    </footer>
 </body>
 </html>
