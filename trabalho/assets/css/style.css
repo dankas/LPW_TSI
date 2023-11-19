@@ -32,34 +32,6 @@ tr, td {
     border:#000 solid 1px;
 }
 
-body {
-    font-family: Lucida Console, monospace;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-h1 {
-    font-family:  logoFont;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 5em;
-}
-
-h2 {
-    font-family:  logoFont;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 2em;
-}
-section {
-    margin-left: 20%;
-    margin-right: 20%;
-    border:#000 solid 1px;
-    padding: 20px;
-    background-color: #c0c0c0;
-}
 /* Estilização para a lista */
 .lista ol, li, a, h3{
     font-weight: bolder;
@@ -103,6 +75,35 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
   }
+
+  body {
+    font-family: Lucida Console, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+h1 {
+    font-family:  logoFont;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 5em;
+}
+
+h2 {
+    font-family:  logoFont;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2em;
+}
+section {
+    margin-left: 20%;
+    margin-right: 20%;
+    border:#000 solid 1px;
+    padding: 20px;
+    background-color: #c0c0c0;
+}
 
 .sidebar {
     background-color: #f0f0f0;
